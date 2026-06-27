@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EMS报关常见问题 - EMS国际邮件商业报关 | 30条FAQ</title>
+<meta name="description" content="EMS国际邮件报关常见问题解答：包裹被扣多久放行、报关需要什么材料、关税怎么算、退运怎么办等30条高频问题。电话021-68908689。">
+<meta name="keywords" content="EMS报关常见问题,报关FAQ,包裹被扣,海关扣留,关税计算,退运处理,报关材料">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="top-nav" id="topNav">
+  <a href="index.html" class="nav-logo">📦 EMS国际邮件商业报关</a>
+  <button class="nav-toggle" aria-label="菜单">☰</button>
+  <ul class="nav-links">
+    <li><a href="index.html">首页</a></li>
+    <li><a href="index.html#services">报关服务</a></li>
+    <li><a href="index.html#knowledge">进口知识</a></li>
+    <li><a href="faq.html" class="active">常见问题</a></li>
+    <li><a href="tel:02168908689" class="nav-cta">📞 联系我们</a></li>
+  </ul>
+</nav>
+
+<section class="hero" style="padding:100px 0 60px;">
+  <div class="container">
+    <div class="hero-badge">常见问题</div>
+    <h1>❓ EMS报关常见问题</h1>
+    <p class="hero-subtitle">整理了客户最常问的30个问题<br>看看有没有你的答案</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="faq-list animate-in" id="faqList"></div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-card">
+      <div class="cta-title">没找到答案？</div>
+      <p class="cta-desc">直接联系我们，报关员一对一解答</p>
+      <div class="cta-buttons">
+        <a href="tel:02168908689" class="btn btn-phone">📞 021-68908689</a>
+        <a href="tel:15026608761" class="btn btn-wechat">📱 报关员小张 15026608761</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>📍 上海市静安区沪太路841号</p>
+    <p>📞 021-68908689 | 📱 15026608761</p>
+    <p style="margin-top:12px;">© 2025 EMS国际邮件商业报关</p>
+  </div>
+</footer>
+
+<script>
+const faqs = [
+  {q:"包裹被海关扣了多久能放行？",a:"材料齐全的情况下，一般1-3个工作日可完成清关放行。加急处理最快可当天放行。如有特殊情况可能需要更长时间，我们会全程跟进。"},
+  {q:"报关需要准备什么材料？",a:"需要收件人身份证正反面复印件、购物订单截图或发票（含商品名称、数量和价格）、包裹内容清单、跨境电商平台交易截图（如适用）、委托报关授权书（代办时需要）、支付凭证。"},
+  {q:"我需要亲自去海关吗？",a:"不需要！EMS报关全程可以线上办理。您只需提供电子版材料，我们代理申报即可，无需您亲自前往海关。"},
+  {q:"个人物品进口关税怎么计算？",a:"关税 = 完税价格 × 税率。不同商品税率不同（13%/20%/50%），应征税额50元以下免征。完税价格由海关根据商品实际成交价格核定。"},
+  {q:"什么情况下包裹会被退运？",a:"以下情况可能被退运：内含禁止进口物品、超过规定时限未补充材料、收件人主动放弃、申报价值严重不符且无法提供证明、需要特殊审批但无法提供许可证等。"},
+  {q:"委托报关公司需要多少钱？",a:"费用根据包裹类型、价值和报关复杂程度而定。个人物品报关一般几百元起，商业样品报关费用略高。具体请电话咨询，我们提供免费报价。"},
+  {q:"委托你们报关需要多久？",a:"收到完整材料后2小时内提交申报。一般1-3个工作日完成清关，加急可当天处理。具体时效取决于海关审核速度。"},
+  {q:"海淘超过1000元一定会被税吗？",a:"不一定。个人邮寄进境物品应征税额50元以下免征。超过1000元限额不一定被税，但被查到需要如实申报。建议如实申报，低报风险很大。"},
+  {q:"EMS报关和DHL/FedEx报关有什么区别？",a:"EMS走邮政通道，DHL/FedEx走商业快件通道。EMS适合个人物品，流程相对简单；商业快递速度更快但审核更严格。我们两者都能处理。"},
+  {q:"从日本/美国/欧洲寄来的包裹被扣了怎么办？",a:"处理流程相同：确认扣件原因→准备材料→提交申报→缴税→放行。不同国家寄来的物品税率可能不同，我们可以帮您查询具体税率。"},
+  {q:"化妆品被海关扣了怎么办？",a:"化妆品属于海关重点监管商品，税率20%。需要提供购买凭证、成分说明等材料。如果含有禁限成分可能需要退运。我们经常处理化妆品清关，经验丰富。"},
+  {q:"食品/保健品可以邮寄入境吗？",a:"可以，但需符合海关规定。食品税率13%，需要提供成分说明和购买凭证。肉制品、生鲜等部分食品可能禁止入境，具体情况请咨询我们。"},
+  {q:"电子烟可以邮寄入境吗？",a:"电子烟及烟油属于海关严格监管物品，个人邮寄入境受到严格限制。建议邮寄前先咨询我们确认最新政策。"},
+  {q:"二手物品能报关吗？",a:"二手物品通常被海关认定为废品，不允许按个人物品申报进关。建议邮寄全新商品，二手物品有被退运或销毁的风险。"},
+  {q:"包裹被海关查验了怎么办？",a:"海关查验是正常流程，不一定是出了问题。配合提供所需材料即可。我们的经验可以帮助您快速通过查验。"},
+  {q:"行邮税和货物税有什么区别？",a:"行邮税适用于个人自用物品，税率分13%/20%/50%三档；货物税适用于商业用途商品，包括关税+增值税+消费税，计算更复杂。我们帮您选择最优申报方式。"},
+  {q:"如何避免包裹被海关扣？",a:"如实申报价值、填写详细品名、控制包裹价值在免税额度内、避开敏感商品、选择正规快递渠道。做好这些可以大幅降低被扣概率。"},
+  {q:"申报价值填多少合适？",a:"建议填写实际成交价格。低报虽然可能省税，但被查到后果严重（罚款、退运、甚至法律责任）。如实申报通关更快、风险更小。"},
+  {q:"海关放行后多久派送？",a:"海关下达放行指令后，快递公司一般1-2个工作日安排派送。具体时效取决于当地快递网点。"},
+  {q:"退运流程需要多久？",a:"退运周期视目的地而定，一般2-4周。退运费用由发件人或收件人承担。我们可协助办理退运手续，减少等待时间。"},
+  {q:"超过免税额一定要交税吗？",a:"是的。应征税额超过50元就需要缴纳。税额=完税价格×税率。例如一件1000元的衣服，税额=1000×20%=200元，超过50元需要缴纳200元关税。"},
+  {q:"海关暂扣和扣留有什么区别？",a:"暂扣是临时性的，补充材料后即可放行；扣留通常意味着存在较严重问题，需要进一步处理。我们帮您判断情况严重程度并提供解决方案。"},
+  {q:"EMS国际包裹怎么跟踪查询？",a:"可通过EMS官网、EMS小程序或海关总署通关状态查询系统跟踪。我们网站也提供查询工具入口。"},
+  {q:"包裹被扣不去处理会怎样？",a:"超过规定时限不处理，包裹将被退回发件地或做放弃处理。仓储费由收件人承担。建议尽快处理，避免额外损失。"},
+  {q:"EMS报关委托书怎么写？",a:"委托书需要包含委托人信息、受托人信息、委托事项、包裹信息、委托人签名等。我们提供标准模板，也可以全程代办，您只需签字即可。"},
+  {q:"个人自用物品如何证明？",a:"提供购物订单、支付记录、物品清单等。数量合理、品种符合个人使用特征的，一般认定为自用。大量同类商品容易被认定为商业用途。"},
+  {q:"EMS代理报关靠谱吗？选择报关公司要注意什么？",a:"选择正规报关公司很重要。我们拥有海关备案资质、10年+经验、10000+成功案例、实体办公地址（沪太路841号），欢迎来访考察。"},
+  {q:"从国外寄东西到中国，什么不能寄？",a:"禁止邮寄的物品包括：武器弹药、毒品、活体动植物、濒危物种制品、伪造货币、淫秽物品等。限制邮寄的包括：药品、食品、化妆品、电子产品等，需要额外手续。"},
+  {q:"你们的服务时间是？",a:"周一至周五 9:00-18:00。周末及节假日可留言，我们会第一时间回复。紧急情况可直接拨打报关员小张手机 15026608761。"},
+  {q:"你们公司在哪里？可以上门吗？",a:"公司地址在上海市静安区沪太路841号，欢迎来访。如果方便，也可以电话或微信沟通，线上办理即可，无需亲自跑一趟。"},
+];
+
+const faqContainer = document.getElementById('faqList');
+faqs.forEach((item, idx) => {
+  const div = document.createElement('div');
+  div.className = 'faq-item';
+  div.innerHTML = `
+    <div class="faq-question">
+      <span>Q${idx+1}. ${item.q}</span>
+      <span class="faq-arrow">▾</span>
+    </div>
+    <div class="faq-answer"><p>${item.a}</p></div>
+  `;
+  faqContainer.appendChild(div);
+});
+
+document.querySelectorAll('.faq-question').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+
+// 导航菜单
+document.querySelector('.nav-toggle')?.addEventListener('click', () => {
+  document.querySelector('.nav-links').classList.toggle('open');
+});
+</script>
+</body>
+</html>
