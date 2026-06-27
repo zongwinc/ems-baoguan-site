@@ -32,6 +32,18 @@
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"首页","item":"https://www.sh-baoguan.com/"},
+    {"@type":"ListItem","position":2,"name":"报关服务","item":"https://www.sh-baoguan.com/#services"},
+    {"@type":"ListItem","position":3,"name":"个人物品报关","item":"https://www.sh-baoguan.com/services/personal-items.html"}
+  ]
+}
+</script>
+
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -53,6 +65,7 @@
     <div class="hero-badge">报关服务</div>
     <h1>👤 个人物品报关</h1>
     <p class="hero-subtitle">海淘包裹、亲友寄送物品被海关扣留？<br>10年+经验，帮您快速清关放行</p>
+    <div class="breadcrumb-nav"><a href="../index.html">首页</a> > <a href="../index.html#services">报关服务</a> > <span>个人物品报关</span></div>
   </div>
 </section>
 
@@ -60,7 +73,7 @@
   <div class="container">
     <div class="seo-block">
       <h2>什么是个人物品报关？</h2>
-      <p>个人物品报关是指个人通过国际快递邮寄自用物品入境时，因超过免税额度或海关抽查，需要向海关申报物品信息并缴纳相应税款的过程。常见场景包括：海淘购物、海外亲友寄送礼物、留学生行李寄回国内等。</p>
+      <p>个人物品报关是指个人通过国际快递邮寄自用物品入境时，因超过免税额度或海关抽查，需要向海关申报物品信息并缴纳相应税款的过程。常见场景包括：海淘购物、海外亲友寄送礼物、留学生行李寄回国内等。如果是企业寄送的<a href="business-samples.html">商业样品</a>，则需要走商业报关流程。</p>
     </div>
 
     <div class="seo-block">
@@ -153,6 +166,28 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container">
+    <div class="related-faq">
+      <h3>相关常见问题</h3>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question"><span>Q1. 包裹被海关扣了多久能放行？</span><span class="faq-arrow">▾</span></div>
+          <div class="faq-answer"><p>材料齐全的情况下，一般1-3个工作日可完成清关放行。加急处理最快当天放行。如有特殊情况可能需要更长时间。</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question"><span>Q2. 报关需要什么材料？</span><span class="faq-arrow">▾</span></div>
+          <div class="faq-answer"><p>需要收件人身份证正反面复印件、购物订单截图或发票（含商品名称、数量和价格）、包裹内容清单、委托报关授权书（委托代办时需要）、支付凭证。</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question"><span>Q3. 我需要亲自去海关吗？</span><span class="faq-arrow">▾</span></div>
+          <div class="faq-answer"><p>不需要！EMS报关全程可以线上办理。您只需提供电子版材料，我们代理申报即可，无需您亲自前往海关。</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="cta-section">
   <div class="container">
     <div class="cta-card">
@@ -171,9 +206,19 @@
     <p>📍 上海市静安区沪太路841号</p>
     <p>📞 021-68908689 | 📱 15026608761</p>
     <p style="margin-top:12px;">© 2025 EMS国际邮件商业报关</p>
+    <p class="update-time">更新时间：2025-06-27</p>
   </div>
 </footer>
 
 <script src="../js/main.js"></script>
+<script>
+document.querySelectorAll('.faq-question').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const isOpen = item.classList.contains('open');
+    item.classList.toggle('open', !isOpen);
+  });
+});
+</script>
 </body>
 </html>

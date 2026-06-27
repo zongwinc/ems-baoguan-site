@@ -32,6 +32,18 @@
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"首页","item":"https://www.sh-baoguan.com/"},
+    {"@type":"ListItem","position":2,"name":"进口知识","item":"https://www.sh-baoguan.com/#knowledge"},
+    {"@type":"ListItem","position":3,"name":"处理流程","item":"https://www.sh-baoguan.com/knowledge/handling-process.html"}
+  ]
+}
+</script>
+
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -53,14 +65,24 @@
     <div class="hero-badge">进口知识 · 处理流程</div>
     <h1>📝 包裹被海关扣留后的分步处理流程</h1>
     <p class="hero-subtitle">EMS / DHL / UPS 国际快递被扣？<br>跟着这五步走，大部分包裹都能顺利放行</p>
+    <div class="breadcrumb-nav"><a href="../index.html">首页</a> > <a href="../index.html#knowledge">进口知识</a> > <span>处理流程</span></div>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
 
+    <ul class="toc-list">
+      <li><a href="#step1">一、收到通知，确认信息</a></li>
+      <li><a href="#step2">二、搞清楚需要什么材料</a></li>
+      <li><a href="#step3">三、选择申报方式</a></li>
+      <li><a href="#step4">四、填写申报信息</a></li>
+      <li><a href="#step5">五、等待审核→缴税→放行</a></li>
+      <li><a href="#step6">六、被退单了怎么办？</a></li>
+    </ul>
+
     <div class="seo-block">
-      <h2>第一步：收到通知，确认信息</h2>
+      <h2 id="step1">第一步：收到通知，确认信息</h2>
       <p>包裹被海关扣留后，你会通过以下方式之一收到通知：</p>
       <ul>
         <li><strong>短信通知</strong> — 来自邮政/快递公司，告知包裹需办理报关手续</li>
@@ -72,7 +94,7 @@
     </div>
 
     <div class="seo-block">
-      <h2>第二步：搞清楚需要什么材料</h2>
+      <h2 id="step2">第二步：搞清楚需要什么材料</h2>
       <p>根据包裹类型和海关要求，可能需要以下材料：</p>
       <table class="rate-table">
         <thead><tr><th>材料</th><th>用途</th><th>准备难度</th></tr></thead>
@@ -88,7 +110,7 @@
     </div>
 
     <div class="seo-block">
-      <h2>第三步：选择申报方式</h2>
+      <h2 id="step3">第三步：选择申报方式</h2>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
         <div style="background:#E3F2FD;border-radius:14px;padding:24px;">
           <h3 style="font-size:18px;margin-bottom:8px;">🌐 线上自行申报</h3>
@@ -104,7 +126,7 @@
     </div>
 
     <div class="seo-block">
-      <h2>第四步：填写申报信息</h2>
+      <h2 id="step4">第四步：填写申报信息</h2>
       <p>这是最关键的一步，以下细节决定申报能否一次通过：</p>
       <ul>
         <li><strong>商品名称要具体</strong> — 写"女士棉质连衣裙"而不是"衣服"</li>
@@ -116,7 +138,7 @@
     </div>
 
     <div class="seo-block">
-      <h2>第五步：等待审核 → 缴税 → 放行</h2>
+      <h2 id="step5">第五步：等待审核 → 缴税 → 放行</h2>
       <div style="display:flex;gap:16px;flex-wrap:wrap;">
         <div style="flex:1;min-width:120px;background:#F5F7FA;border-radius:12px;padding:16px;text-align:center;">
           <span style="font-size:28px;">📋</span>
@@ -138,14 +160,36 @@
     </div>
 
     <div class="seo-block">
-      <h2>被退单了怎么办？</h2>
+      <h2 id="step6">被退单了怎么办？</h2>
       <ul>
         <li>查看退单原因 → 修改对应内容 → 重新提交</li>
         <li>多次退单 → 建议找专业报关公司处理</li>
-        <li>收到退运通知 → 立即联系我们评估是否可申诉挽救</li>
+        <li>收到退运通知 → 立即联系我们评估是否可申诉挽救。了解<a href="return-handling.html">退运处理方法</a>。</li>
       </ul>
     </div>
 
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="related-faq">
+      <h3>相关常见问题</h3>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question"><span>Q1. 委托你们报关需要多久？</span><span class="faq-arrow">▾</span></div>
+          <div class="faq-answer"><p>收到完整材料后2小时内提交申报。一般1-3个工作日完成清关，加急可当天处理。具体时效取决于海关审核速度。</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question"><span>Q2. 海关放行后多久派送？</span><span class="faq-arrow">▾</span></div>
+          <div class="faq-answer"><p>海关下达放行指令后，快递公司一般1-2个工作日安排派送。具体时效取决于当地快递网点。</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question"><span>Q3. 申报价值填多少合适？</span><span class="faq-arrow">▾</span></div>
+          <div class="faq-answer"><p>建议填写实际成交价格。低报虽然可能省税，但被查到后果严重（罚款、退运、甚至法律责任）。如实申报通关更快、风险更小。</p></div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -167,8 +211,18 @@
     <p>📍 上海市静安区沪太路841号</p>
     <p>📞 021-68908689 | 📱 15026608761</p>
     <p style="margin-top:12px;">© 2025 EMS国际邮件商业报关</p>
+    <p class="update-time">更新时间：2025-06-27</p>
   </div>
 </footer>
 <script src="../js/main.js"></script>
+<script>
+document.querySelectorAll('.faq-question').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const isOpen = item.classList.contains('open');
+    item.classList.toggle('open', !isOpen);
+  });
+});
+</script>
 </body>
 </html>

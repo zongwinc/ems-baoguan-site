@@ -32,6 +32,18 @@
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"首页","item":"https://www.sh-baoguan.com/"},
+    {"@type":"ListItem","position":2,"name":"报关服务","item":"https://www.sh-baoguan.com/#services"},
+    {"@type":"ListItem","position":3,"name":"商业样品报关","item":"https://www.sh-baoguan.com/services/business-samples.html"}
+  ]
+}
+</script>
+
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -53,6 +65,7 @@
     <div class="hero-badge">报关服务</div>
     <h1>🏭 商业样品报关</h1>
     <p class="hero-subtitle">外贸样品、测试样机、展览品进口清关<br>正确申报，合规高效通关</p>
+    <div class="breadcrumb-nav"><a href="../index.html">首页</a> > <a href="../index.html#services">报关服务</a> > <span>商业样品报关</span></div>
   </div>
 </section>
 
@@ -68,7 +81,7 @@
       <table class="rate-table">
         <thead><tr><th>对比项</th><th>个人物品报关</th><th>商业样品报关</th></tr></thead>
         <tbody>
-          <tr><td>适用对象</td><td>个人自用</td><td>企业/商业用途</td></tr>
+          <tr><td>适用对象</td><td><a href="personal-items.html">个人自用</a></td><td>企业/商业用途</td></tr>
           <tr><td>申报主体</td><td>个人</td><td>企业或报关代理</td></tr>
           <tr><td>所需材料</td><td>身份证+购物凭证</td><td>商业发票+装箱单+说明函</td></tr>
           <tr><td>税率</td><td>行邮税率</td><td>货物税率（可能更低）</td></tr>
@@ -118,7 +131,7 @@
     <div class="seo-block">
       <h2>常见错误</h2>
       <ul>
-        <li>❌ <strong>把样品当个人物品申报</strong> → 被退单，耽误时间</li>
+        <li>❌ <strong>把样品当个人物品申报</strong> → 被退单，耽误时间。参见<a href="../knowledge/common-mistakes.html">报关常见误区</a></li>
         <li>❌ <strong>发票不注明"样品"</strong> → 按正常商品计税，多交税</li>
         <li>❌ <strong>没有样品说明函</strong> → 海关无法判断用途</li>
         <li>❌ <strong>多批次合并寄送</strong> → 容易被认定为批量采购</li>
@@ -135,6 +148,28 @@
         <li>✅ <strong>全程跟进</strong> — 从申报到放行，专人跟进每一步</li>
         <li>✅ <strong>外贸友好</strong> — 熟悉外贸流程，理解企业需求</li>
       </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="related-faq">
+      <h3>相关常见问题</h3>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question"><span>Q1. EMS报关和DHL/FedEx报关有什么区别？</span><span class="faq-arrow">▾</span></div>
+          <div class="faq-answer"><p>EMS走邮政通道，DHL/FedEx走商业快件通道。EMS适合个人物品，流程相对简单；商业快递速度更快但审核更严格。我们两者都能处理。</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question"><span>Q2. 委托报关公司需要多少钱？</span><span class="faq-arrow">▾</span></div>
+          <div class="faq-answer"><p>费用根据包裹类型、价值和报关复杂程度而定。个人物品报关一般几百元起，商业样品报关费用略高。具体请电话咨询，我们提供免费报价。</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question"><span>Q3. 行邮税和货物税有什么区别？</span><span class="faq-arrow">▾</span></div>
+          <div class="faq-answer"><p>行邮税适用于个人自用物品，税率分13%/20%/50%三档；货物税适用于商业用途商品，包括关税+增值税+消费税，计算更复杂。我们帮您选择最优申报方式。</p></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -157,9 +192,19 @@
     <p>📍 上海市静安区沪太路841号</p>
     <p>📞 021-68908689 | 📱 15026608761</p>
     <p style="margin-top:12px;">© 2025 EMS国际邮件商业报关</p>
+    <p class="update-time">更新时间：2025-06-27</p>
   </div>
 </footer>
 
 <script src="../js/main.js"></script>
+<script>
+document.querySelectorAll('.faq-question').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const isOpen = item.classList.contains('open');
+    item.classList.toggle('open', !isOpen);
+  });
+});
+</script>
 </body>
 </html>

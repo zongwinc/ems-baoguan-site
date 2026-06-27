@@ -32,6 +32,18 @@
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"首页","item":"https://www.sh-baoguan.com/"},
+    {"@type":"ListItem","position":2,"name":"报关服务","item":"https://www.sh-baoguan.com/#services"},
+    {"@type":"ListItem","position":3,"name":"退运处理","item":"https://www.sh-baoguan.com/services/return-shipment.html"}
+  ]
+}
+</script>
+
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -53,6 +65,7 @@
     <div class="hero-badge">报关服务</div>
     <h1>🔄 退运处理</h1>
     <p class="hero-subtitle">包裹被海关要求退运？别急着放弃<br>我们帮您申诉改单，尽可能避免退运损失</p>
+    <div class="breadcrumb-nav"><a href="../index.html">首页</a> > <a href="../index.html#services">报关服务</a> > <span>退运处理</span></div>
   </div>
 </section>
 
@@ -60,7 +73,7 @@
   <div class="container">
     <div class="seo-block">
       <h2>什么是退运处理？</h2>
-      <p>退运是指海关认为包裹不符合入境条件，要求将包裹退回发件地的处理方式。退运意味着：物品无法入境、已支付的国际运费白费、需要重新安排寄送或放弃物品。专业的退运处理服务可以帮助您在退运前进行申诉或改单，尽可能挽回损失。</p>
+      <p>退运是指海关认为包裹不符合入境条件，要求将包裹退回发件地的处理方式。退运意味着：物品无法入境、已支付的国际运费白费、需要重新安排寄送或放弃物品。专业的退运处理服务可以帮助您在退运前进行申诉或改单，尽可能挽回损失。了解完整的<a href="../knowledge/handling-process.html">清关处理流程</a>有助于避免退运。</p>
     </div>
 
     <div class="seo-block">
@@ -143,6 +156,28 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container">
+    <div class="related-faq">
+      <h3>相关常见问题</h3>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question"><span>Q1. 什么情况下包裹会被退运？</span><span class="faq-arrow">▾</span></div>
+          <div class="faq-answer"><p>以下情况可能被退运：内含禁止进口物品、超过规定时限未补充材料、收件人主动放弃、申报价值严重不符且无法提供证明、需要特殊审批但无法提供许可证等。</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question"><span>Q2. 包裹被扣不去处理会怎样？</span><span class="faq-arrow">▾</span></div>
+          <div class="faq-answer"><p>超过规定时限不处理，包裹将被退回发件地或做放弃处理。仓储费由收件人承担。建议尽快处理，避免额外损失。</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question"><span>Q3. 退运流程需要多久？</span><span class="faq-arrow">▾</span></div>
+          <div class="faq-answer"><p>退运周期视目的地而定，一般2-4周。退运费用由发件人或收件人承担。我们可协助办理退运手续，减少等待时间。</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="cta-section">
   <div class="container">
     <div class="cta-card">
@@ -161,9 +196,19 @@
     <p>📍 上海市静安区沪太路841号</p>
     <p>📞 021-68908689 | 📱 15026608761</p>
     <p style="margin-top:12px;">© 2025 EMS国际邮件商业报关</p>
+    <p class="update-time">更新时间：2025-06-27</p>
   </div>
 </footer>
 
 <script src="../js/main.js"></script>
+<script>
+document.querySelectorAll('.faq-question').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const isOpen = item.classList.contains('open');
+    item.classList.toggle('open', !isOpen);
+  });
+});
+</script>
 </body>
 </html>

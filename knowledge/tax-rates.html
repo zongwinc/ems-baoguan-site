@@ -32,6 +32,18 @@
 }
 </script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"首页","item":"https://www.sh-baoguan.com/"},
+    {"@type":"ListItem","position":2,"name":"进口知识","item":"https://www.sh-baoguan.com/#knowledge"},
+    {"@type":"ListItem","position":3,"name":"税率参考","item":"https://www.sh-baoguan.com/knowledge/tax-rates.html"}
+  ]
+}
+</script>
+
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -53,14 +65,23 @@
     <div class="hero-badge">进口知识 · 税率参考</div>
     <h1>💰 个人物品进口行邮税率参考表</h1>
     <p class="hero-subtitle">EMS / DHL / UPS 国际快递包裹进口税率一览<br>2025年最新版 · 收藏备用</p>
+    <div class="breadcrumb-nav"><a href="../index.html">首页</a> > <a href="../index.html#knowledge">进口知识</a> > <span>税率参考</span></div>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
 
+    <ul class="toc-list">
+      <li><a href="#what-is">一、行邮税是什么？</a></li>
+      <li><a href="#rate-table">二、2025行邮税率速查表</a></li>
+      <li><a href="#calc-example">三、税费计算示例</a></li>
+      <li><a href="#misunderstand">四、常见误区</a></li>
+      <li><a href="#consult">五、不确定你的包裹要交多少税？</a></li>
+    </ul>
+
     <div class="seo-block">
-      <h2>行邮税是什么？</h2>
+      <h2 id="what-is">行邮税是什么？</h2>
       <p>行邮税是海关对个人邮寄进境物品征收的进口税，合并了<strong>关税、增值税、消费税</strong>三项，按简化税率征收。适用于个人自用的邮寄物品、旅客行李物品等。</p>
       <div class="tip-box">
         <strong>📌 关键规则：</strong><br>
@@ -71,7 +92,7 @@
     </div>
 
     <div class="seo-block">
-      <h2>2025行邮税率速查表</h2>
+      <h2 id="rate-table">2025行邮税率速查表</h2>
       <table class="rate-table">
         <thead><tr><th>税率</th><th>品类</th><th>常见商品举例</th></tr></thead>
         <tbody>
@@ -92,7 +113,7 @@
     </div>
 
     <div class="seo-block">
-      <h2>税费计算示例</h2>
+      <h2 id="calc-example">税费计算示例</h2>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
         <div style="background:#E8F5E9;border-radius:12px;padding:20px;">
           <h3 style="font-size:16px;color:#2E7D32;">✅ 免征案例</h3>
@@ -106,20 +127,42 @@
     </div>
 
     <div class="seo-block">
-      <h2>常见误区</h2>
+      <h2 id="misunderstand">常见误区</h2>
       <ul>
         <li>❌ <strong>"海淘都免税"</strong> — 只有1000元以内且税额≤50元才免征</li>
         <li>❌ <strong>"价格写低点就行"</strong> — 海关有价格数据库，查到更麻烦</li>
         <li>❌ <strong>"分几个包裹寄就免税"</strong> — 同一收件人多包裹可能合并计算</li>
-        <li>❌ <strong>"样品不用交税"</strong> — 商业样品按货物税率，不一定比行邮税低</li>
+        <li>❌ <strong>"样品不用交税"</strong> — 商业样品按货物税率，不一定比行邮税低。了解<a href="../services/business-samples.html">商业样品报关</a></li>
       </ul>
     </div>
 
     <div class="seo-block">
-      <h2>不确定你的包裹要交多少税？</h2>
+      <h2 id="consult">不确定你的包裹要交多少税？</h2>
       <p>不同商品对应的HS编码和税率可能不同。联系我们，免费帮你预估税费。</p>
     </div>
 
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="related-faq">
+      <h3>相关常见问题</h3>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question"><span>Q1. 个人物品进口关税怎么计算？</span><span class="faq-arrow">▾</span></div>
+          <div class="faq-answer"><p>关税=完税价格×税率。不同商品税率不同：食品保健品13%、服装鞋靴20%、化妆品20%、电子产品13%、钟表首饰50%、烟酒50%。应征税额50元以下免征。</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question"><span>Q2. 海淘超过1000元一定会被税吗？</span><span class="faq-arrow">▾</span></div>
+          <div class="faq-answer"><p>不一定。个人邮寄进境物品应征税额50元以下免征。超过1000元限额不一定被税，但被查到需要如实申报。建议如实申报，低报风险很大。</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question"><span>Q3. 超过免税额一定要交税吗？</span><span class="faq-arrow">▾</span></div>
+          <div class="faq-answer"><p>是的。应征税额超过50元就需要缴纳。税额=完税价格×税率。例如一件1000元的衣服，税额=1000×20%=200元，超过50元需要缴纳200元关税。</p></div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -141,8 +184,18 @@
     <p>📍 上海市静安区沪太路841号</p>
     <p>📞 021-68908689 | 📱 15026608761</p>
     <p style="margin-top:12px;">© 2025 EMS国际邮件商业报关</p>
+    <p class="update-time">更新时间：2025-06-27</p>
   </div>
 </footer>
 <script src="../js/main.js"></script>
+<script>
+document.querySelectorAll('.faq-question').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const isOpen = item.classList.contains('open');
+    item.classList.toggle('open', !isOpen);
+  });
+});
+</script>
 </body>
 </html>
