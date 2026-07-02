@@ -1,3 +1,59 @@
+# ============================================
+# robots.txt for emshelp.cn
+# EMS国际邮件商业报关
+# Last updated: 2026-07-02
+# ============================================
+
+# --- Standard Search Engine Crawlers ---
 User-agent: *
 Allow: /
-Sitemap: https://ems-8nb.pages.dev/sitemap.xml
+Sitemap: https://emshelp.cn/sitemap.xml
+
+# --- AI Crawlers (详见 llms.txt) ---
+
+# OpenAI ChatGPT 训练爬虫
+User-agent: GPTBot
+Allow: /
+Disallow: /private/
+
+# OpenAI 搜索索引
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /private/
+
+# Anthropic Claude 爬虫
+User-agent: Claude-Web
+Allow: /
+Disallow: /private/
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Google AI (Gemini / AI Overviews)
+User-agent: Google-Extended
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot-Extended
+Allow: /
+
+# 字节跳动 / 豆包 (国产AI)
+User-agent: Bytespider
+Allow: /
+
+# Cohere AI
+User-agent: cohere-ai
+Allow: /
+
+# DuckDuckGo AI
+User-agent: DuckDuckBot
+Allow: /
+
+# Amazon AI
+User-agent: Amazonbot
+Allow: /

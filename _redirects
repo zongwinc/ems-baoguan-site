@@ -1,0 +1,5 @@
+# Cloudflare Pages Redirects
+# www → 根域名 301 永久重定向
+https://www.emshelp.cn/* https://emshelp.cn/:splat 301!
+http://www.emshelp.cn/* https://emshelp.cn/:splat 301!
+http://emshelp.cn/* https://emshelp.cn/:splat 301!

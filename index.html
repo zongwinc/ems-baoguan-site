@@ -2,6 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- ===== SEO Meta ===== -->
@@ -13,31 +14,85 @@
 <meta property="og:title" content="EMS国际邮件商业报关 - 快件被扣清关 | 邮政报关代理 | 上海报关公司">
 <meta property="og:description" content="专业解决国际快递被海关扣留、海淘包裹清关、个人物品报关等问题。电话021-68908689，地址上海市静安区沪太路841号。">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://ems-8nb.pages.dev/">
+<meta property="og:url" content="https://emshelp.cn/">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://emshelp.cn/images/og-banner.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- ===== Twitter Card ===== -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="EMS国际邮件商业报关 - 快件被扣清关 | 邮政报关代理 | 上海报关公司">
+<meta name="twitter:description" content="专业解决国际快递被海关扣留、海淘包裹清关、个人物品报关等问题。电话021-68908689。">
+<meta name="twitter:image" content="https://emshelp.cn/images/og-banner.jpg">
 
 <!-- ===== Canonical ===== -->
-<link rel="canonical" href="https://ems-8nb.pages.dev/">
+<link rel="canonical" href="https://emshelp.cn/">
+
+<!-- ===== AI Crawler Hints ===== -->
+<meta name="ai-content-policy" content="citation-required attribution-required">
+<meta name="ai-training-policy" content="opt-out">
+<link rel="llms-full" title="LLM Full Content" href="/llms-full.txt">
 
 <!-- ===== Schema.org 结构化数据 ===== -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": ["LocalBusiness", "Organization"],
+  "@id": "https://emshelp.cn/#organization",
   "name": "EMS国际邮件商业报关",
-  "description": "专业解决国际快递被海关扣留、海淘包裹清关、个人物品报关代理、商业样品报关、HS编码查询、进口关税税率查询、退运处理。",
+  "alternateName": ["EMS报关", "邮政报关", "上海EMS报关", "EMS清关代理"],
+  "description": "专业解决国际快递被海关扣留、海淘包裹清关、个人物品报关代理、商业样品报关、HS编码查询、进口关税税率查询、退运处理。10年+EMS报关经验，10000+成功案例。",
+  "url": "https://emshelp.cn/",
+  "logo": "https://emshelp.cn/images/og-banner.jpg",
+  "image": "https://emshelp.cn/images/og-banner.jpg",
   "telephone": ["+86-21-68908689", "+86-15026608761"],
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "沪太路841号",
     "addressLocality": "上海市",
     "addressRegion": "静安区",
-    "addressCountry": "CN"
+    "addressCountry": "CN",
+    "postalCode": "200072"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 31.2646,
+    "longitude": 121.4456
   },
   "openingHours": "Mo-Fr 09:00-18:00",
   "priceRange": "¥100-¥5000",
-  "image": "https://ems-8nb.pages.dev/images/qrcode.jpg",
-  "url": "https://ems-8nb.pages.dev/"
+  "areaServed": {
+    "@type": "Country",
+    "name": "China"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "报关服务",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "个人物品报关", "description": "海淘购物、个人邮寄包裹被海关扣留清关服务"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "商业样品报关", "description": "企业商业样品国际快件清关"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "退运/弃件处理", "description": "包裹退运或放弃处理全流程善后方案"}}
+    ]
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://emshelp.cn/#website",
+  "url": "https://emshelp.cn/",
+  "name": "EMS国际邮件商业报关",
+  "description": "专业EMS国际邮件报关代理，解决国际快递被扣清关问题。",
+  "inLanguage": "zh-CN",
+  "publisher": {"@id": "https://emshelp.cn/#organization"},
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {"@type": "EntryPoint", "urlTemplate": "https://emshelp.cn/search?q={search_term_string}"},
+    "query-input": "required name=search_term_string"
+  }
 }
 </script>
 
@@ -72,15 +127,28 @@
 }
 </script>
 
+<!-- ===== Speakable (Voice Search / AI Assistants) ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".hero h1", ".hero-subtitle"]
+  },
+  "url": "https://emshelp.cn/"
+}
+</script>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type":"ListItem","position":1,"name":"首页","item":"https://ems-8nb.pages.dev/"},
-    {"@type":"ListItem","position":2,"name":"报关服务","item":"https://ems-8nb.pages.dev/#services"},
-    {"@type":"ListItem","position":3,"name":"报关指南","item":"https://ems-8nb.pages.dev/#guide"},
-    {"@type":"ListItem","position":4,"name":"联系我们","item":"https://ems-8nb.pages.dev/#contact"}
+    {"@type":"ListItem","position":1,"name":"首页","item":"https://emshelp.cn/"},
+    {"@type":"ListItem","position":2,"name":"报关服务","item":"https://emshelp.cn/#services"},
+    {"@type":"ListItem","position":3,"name":"报关指南","item":"https://emshelp.cn/#guide"},
+    {"@type":"ListItem","position":4,"name":"联系我们","item":"https://emshelp.cn/#contact"}
   ]
 }
 </script>
@@ -90,21 +158,24 @@
   "@context": "https://schema.org",
   "@type": "SiteNavigationElement",
   "name": "报关服务",
-  "url": "https://ems-8nb.pages.dev/#services",
+  "url": "https://emshelp.cn/#services",
   "hasPart": [
-    {"@type": "SiteNavigationElement", "name": "个人物品报关", "url": "https://ems-8nb.pages.dev/services/personal-items.html"},
-    {"@type": "SiteNavigationElement", "name": "商业样品报关", "url": "https://ems-8nb.pages.dev/services/business-samples.html"},
-    {"@type": "SiteNavigationElement", "name": "退运处理", "url": "https://ems-8nb.pages.dev/services/return-shipment.html"},
-    {"@type": "SiteNavigationElement", "name": "常见问题", "url": "https://ems-8nb.pages.dev/faq.html"},
-    {"@type": "SiteNavigationElement", "name": "扣留原因", "url": "https://ems-8nb.pages.dev/knowledge/detention-reasons.html"},
-    {"@type": "SiteNavigationElement", "name": "处理流程", "url": "https://ems-8nb.pages.dev/knowledge/handling-process.html"},
-    {"@type": "SiteNavigationElement", "name": "税率参考", "url": "https://ems-8nb.pages.dev/knowledge/tax-rates.html"},
-    {"@type": "SiteNavigationElement", "name": "退运处理", "url": "https://ems-8nb.pages.dev/knowledge/return-handling.html"},
-    {"@type": "SiteNavigationElement", "name": "常见误区", "url": "https://ems-8nb.pages.dev/knowledge/common-mistakes.html"}
+    {"@type": "SiteNavigationElement", "name": "个人物品报关", "url": "https://emshelp.cn/services/personal-items.html"},
+    {"@type": "SiteNavigationElement", "name": "商业样品报关", "url": "https://emshelp.cn/services/business-samples.html"},
+    {"@type": "SiteNavigationElement", "name": "退运处理", "url": "https://emshelp.cn/services/return-shipment.html"},
+    {"@type": "SiteNavigationElement", "name": "常见问题", "url": "https://emshelp.cn/faq.html"},
+    {"@type": "SiteNavigationElement", "name": "扣留原因", "url": "https://emshelp.cn/knowledge/detention-reasons.html"},
+    {"@type": "SiteNavigationElement", "name": "处理流程", "url": "https://emshelp.cn/knowledge/handling-process.html"},
+    {"@type": "SiteNavigationElement", "name": "税率参考", "url": "https://emshelp.cn/knowledge/tax-rates.html"},
+    {"@type": "SiteNavigationElement", "name": "退运处理", "url": "https://emshelp.cn/knowledge/return-handling.html"},
+    {"@type": "SiteNavigationElement", "name": "常见误区", "url": "https://emshelp.cn/knowledge/common-mistakes.html"}
   ]
 }
 </script>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -351,6 +422,14 @@
         <h2 style="font-size:20px;font-weight:700;margin-bottom:4px;">📰 进出口新闻</h2>
         <p style="font-size:13px;color:#888;margin-bottom:18px;">最新跨境物流与进出口贸易动态</p>
         <div style="display:flex;flex-direction:column;gap:12px;">
+          <a href="news/us-cpsc-efiling-july-2026.html" style="text-decoration:none;padding:12px;border-radius:10px;background:#F8FAFC;display:block;transition:all 0.2s;">
+            <div style="font-size:14px;font-weight:600;color:#1A1A2E;margin-bottom:4px;">美国CPSC电子备案7月8日强制实施！跨境消费品出口清关门槛再升级</div>
+            <div style="font-size:12px;color:#bbb;">2026-07-02 · 美国清关政策</div>
+          </a>
+          <a href="news/express-fuel-surcharge-2026.html" style="text-decoration:none;padding:12px;border-radius:10px;background:#F8FAFC;display:block;transition:all 0.2s;">
+            <div style="font-size:14px;font-weight:600;color:#1A1A2E;margin-bottom:4px;">国际快递燃油费创年内新高：UPS 39.25%、FedEx 38.5%，海淘成本又涨了</div>
+            <div style="font-size:12px;color:#bbb;">2026-07-02 · 国际物流</div>
+          </a>
           <a href="news/eu-tariff-change-2026.html" style="text-decoration:none;padding:12px;border-radius:10px;background:#F8FAFC;display:block;transition:all 0.2s;">
             <div style="font-size:14px;font-weight:600;color:#1A1A2E;margin-bottom:4px;">欧盟7月1日正式取消小额包裹免税！进境中国包裹将受何影响？</div>
             <div style="font-size:12px;color:#bbb;">2026-07-01 · 跨境政策</div>
@@ -363,14 +442,6 @@
             <div style="font-size:14px;font-weight:600;color:#1A1A2E;margin-bottom:4px;">2026下半年海关AI智能审图全面上线！低报瞒报无处遁形</div>
             <div style="font-size:12px;color:#bbb;">2026-07-01 · 海关科技</div>
           </a>
-          <a href="news/pudong-express-expansion.html" style="text-decoration:none;padding:12px;border-radius:10px;background:#F8FAFC;display:block;transition:all 0.2s;">
-            <div style="font-size:14px;font-weight:600;color:#1A1A2E;margin-bottom:4px;">上海浦东机场国际快件中心扩容！DHL/EMS清关时效有望缩短30%</div>
-            <div style="font-size:12px;color:#bbb;">2026-07-01 · 跨境物流</div>
-          </a>
-          <a href="news/gold-import-rule.html" style="text-decoration:none;padding:12px;border-radius:10px;background:#F8FAFC;display:block;transition:all 0.2s;">
-            <div style="font-size:14px;font-weight:600;color:#1A1A2E;margin-bottom:4px;">央行海关总署联手修订黄金进出口管理办法！个人携带黄金进出境政策拟调整</div>
-            <div style="font-size:12px;color:#bbb;">2026-06-30 · 海关政策</div>
-          </a>
         </div>
         <a href="news/" style="display:block;text-align:center;margin-top:16px;font-size:13px;color:#1565C0;font-weight:600;">查看更多新闻 →</a>
       </div>
@@ -380,25 +451,25 @@
         <h2 style="font-size:20px;font-weight:700;margin-bottom:4px;">📦 报关实例</h2>
         <p style="font-size:13px;color:#888;margin-bottom:18px;">真实报关成功案例，看看有没有和你类似的情况</p>
         <div style="display:flex;flex-direction:column;gap:12px;">
-          <a href="cases/case-usa-jewelry.html" style="text-decoration:none;padding:12px;border-radius:10px;background:#F8FAFC;display:block;transition:all 0.2s;">
-            <div style="font-size:14px;font-weight:600;color:#1A1A2E;margin-bottom:4px;">美国寄了珠宝首饰被海关扣了？高价值饰品个人申报5天通关</div>
-            <div style="font-size:12px;color:#bbb;">2026-07-01 · 珠宝首饰报关</div>
+          <a href="cases/case-netherlands-bike-parts.html" style="text-decoration:none;padding:12px;border-radius:10px;background:#F8FAFC;display:block;transition:all 0.2s;">
+            <div style="font-size:14px;font-weight:600;color:#1A1A2E;margin-bottom:4px;">荷兰寄了高端自行车变速器被海关扣了？工业配件商业报关3天通关</div>
+            <div style="font-size:12px;color:#bbb;">2026-07-02 · 运动器材报关</div>
           </a>
-          <a href="cases/case-singapore-sensors.html" style="text-decoration:none;padding:12px;border-radius:10px;background:#F8FAFC;display:block;transition:all 0.2s;">
-            <div style="font-size:14px;font-weight:600;color:#1A1A2E;margin-bottom:4px;">新加坡寄了工业传感器被海关扣了？DHL商业样品报关6天通关</div>
-            <div style="font-size:12px;color:#bbb;">2026-07-01 · 工业零件报关</div>
+          <a href="cases/case-switzerland-watch-parts.html" style="text-decoration:none;padding:12px;border-radius:10px;background:#F8FAFC;display:block;transition:all 0.2s;">
+            <div style="font-size:14px;font-weight:600;color:#1A1A2E;margin-bottom:4px;">瑞士寄回的钟表维修零件被海关卡了？精密仪器商业报关5天通关</div>
+            <div style="font-size:12px;color:#bbb;">2026-07-02 · 精密零件报关</div>
           </a>
-          <a href="cases/case-australia-surf-gear.html" style="text-decoration:none;padding:12px;border-radius:10px;background:#F8FAFC;display:block;transition:all 0.2s;">
-            <div style="font-size:14px;font-weight:600;color:#1A1A2E;margin-bottom:4px;">澳大利亚寄了冲浪装备被海关扣了？水上运动器材3天清关</div>
-            <div style="font-size:12px;color:#bbb;">2026-07-01 · 运动器材报关</div>
+          <a href="cases/case-denmark-designer-lamp.html" style="text-decoration:none;padding:12px;border-radius:10px;background:#F8FAFC;display:block;transition:all 0.2s;">
+            <div style="font-size:14px;font-weight:600;color:#1A1A2E;margin-bottom:4px;">丹麦买的北欧设计师台灯寄回国被海关扣了？家居灯具个人申报4天放行</div>
+            <div style="font-size:12px;color:#bbb;">2026-07-02 · 家居用品报关</div>
           </a>
-          <a href="cases/case-france-vintage-camera.html" style="text-decoration:none;padding:12px;border-radius:10px;background:#F8FAFC;display:block;transition:all 0.2s;">
-            <div style="font-size:14px;font-weight:600;color:#1A1A2E;margin-bottom:4px;">法国寄了古董相机被海关扣了？二手摄影器材特殊报关4天通关</div>
-            <div style="font-size:12px;color:#bbb;">2026-07-01 · 摄影器材报关</div>
+          <a href="cases/case-canada-outdoor-clothing.html" style="text-decoration:none;padding:12px;border-radius:10px;background:#F8FAFC;display:block;transition:all 0.2s;">
+            <div style="font-size:14px;font-weight:600;color:#1A1A2E;margin-bottom:4px;">加拿大寄来的户外羽绒服被海关怀疑商业用途？户外装备个人申报3天翻盘</div>
+            <div style="font-size:12px;color:#bbb;">2026-07-02 · 服饰报关</div>
           </a>
-          <a href="cases/case-japan-guitar-pedals.html" style="text-decoration:none;padding:12px;border-radius:10px;background:#F8FAFC;display:block;transition:all 0.2s;">
-            <div style="font-size:14px;font-weight:600;color:#1A1A2E;margin-bottom:4px;">日本寄了电吉他效果器被海关扣了？乐器类个人申报5天放行</div>
-            <div style="font-size:12px;color:#bbb;">2026-07-01 · 乐器报关</div>
+          <a href="cases/case-spain-football-jersey.html" style="text-decoration:none;padding:12px;border-radius:10px;background:#F8FAFC;display:block;transition:all 0.2s;">
+            <div style="font-size:14px;font-weight:600;color:#1A1A2E;margin-bottom:4px;">西班牙寄了足球俱乐部球衣被上海海关卡关？体育用品个人申报4天放行</div>
+            <div style="font-size:12px;color:#bbb;">2026-07-02 · 体育用品报关</div>
           </a>
         </div>
         <a href="cases/" style="display:block;text-align:center;margin-top:16px;font-size:13px;color:#1565C0;font-weight:600;">查看更多案例 →</a>
@@ -437,24 +508,24 @@
         <div class="case-footer"><span class="case-time">⏱ 6天完成</span><span class="case-tag">工业零件商业报关</span></div>
       </div>
       <div class="case-card">
-        <span class="case-badge badge-urgent">疑难杂件</span>
-        <h3 class="case-title">申报价值争议，专业沟通化解</h3>
+        <span class="case-badge badge-personal">个人物品</span>
+        <h3 class="case-title">西班牙球衣被卡，球迷收藏证明助力4天通关</h3>
         <div class="case-timeline">
-          <div class="case-step"><span class="case-dot dot-red"></span><span class="case-step-text"><span class="case-step-label">问题</span>王先生从美国购买的电子产品因申报价值与海关估价差距较大，面临退运风险。</span></div>
-          <div class="case-step"><span class="case-dot dot-orange"></span><span class="case-step-text"><span class="case-step-label">处理</span>提供真实交易凭证和市场价格证明，与海关反复沟通争取合理估价。</span></div>
-          <div class="case-step"><span class="case-dot dot-green"></span><span class="case-step-text"><span class="case-step-label">结果</span>海关认可补充材料，按实际交易价格核定，包裹成功放行。</span></div>
+          <div class="case-step"><span class="case-dot dot-red"></span><span class="case-step-text"><span class="case-step-label">问题</span>铁杆球迷从西班牙官网购买3件不同赛季球衣被海关认定"多件品牌服饰"要求说明用途。</span></div>
+          <div class="case-step"><span class="case-dot dot-orange"></span><span class="case-step-text"><span class="case-step-label">处理</span>提供十年球迷收藏证明+每件球衣的背景故事+官网订单+球迷社群记录，构建完整收藏逻辑。</span></div>
+          <div class="case-step"><span class="case-dot dot-green"></span><span class="case-step-text"><span class="case-step-label">结果</span>海关认可个人收藏用途，缴税360元后4天放行，球迷收藏完整。</span></div>
         </div>
-        <div class="case-footer"><span class="case-time">⏱ 5天完成</span><span class="case-tag">价值争议</span></div>
+        <div class="case-footer"><span class="case-time">⏱ 4天完成</span><span class="case-tag">体育用品清关</span></div>
       </div>
       <div class="case-card">
-        <span class="case-badge badge-personal">个人物品</span>
-        <h3 class="case-title">食品包裹被扣，规范申报通关</h3>
+        <span class="case-badge badge-business">商业样品</span>
+        <h3 class="case-title">瑞士机芯零件商业报关，精准HS编码高效通关</h3>
         <div class="case-timeline">
-          <div class="case-step"><span class="case-dot dot-red"></span><span class="case-step-text"><span class="case-step-label">问题</span>张阿姨女儿从澳洲寄来的保健品和零食被扣，因内含食品需要额外审批手续。</span></div>
-          <div class="case-step"><span class="case-dot dot-orange"></span><span class="case-step-text"><span class="case-step-label">处理</span>指导提供食品成分说明、购买凭证，按食品类规定规范申报，协助办理必要手续。</span></div>
-          <div class="case-step"><span class="case-dot dot-green"></span><span class="case-step-text"><span class="case-step-label">结果</span>材料补充齐全后2个工作日完成清关，包裹完整送达。</span></div>
+          <div class="case-step"><span class="case-dot dot-red"></span><span class="case-step-text"><span class="case-step-label">问题</span>上海修表师傅从瑞士订购5200元机芯零件+表带，DHL直接要求商业报关，修表师傅着急等料。</span></div>
+          <div class="case-step"><span class="case-dot dot-orange"></span><span class="case-step-text"><span class="case-step-label">处理</span>精准归类HS编码9114.9000（钟表零件）+完整商业发票和技术参数，DHL系统无缝对接。</span></div>
+          <div class="case-step"><span class="case-dot dot-green"></span><span class="case-step-text"><span class="case-step-label">结果</span>5天通关，增值税可全额抵扣，总税负仅1029元，比个人申报还省11元。</span></div>
         </div>
-        <div class="case-footer"><span class="case-time">⏱ 2天完成</span><span class="case-tag">食品清关</span></div>
+        <div class="case-footer"><span class="case-time">⏱ 5天完成</span><span class="case-tag">精密零件报关</span></div>
       </div>
     </div>
   </div>
@@ -505,8 +576,8 @@
     <p><strong>EMS国际邮件商业报关</strong> · 专业清关一步到位</p>
     <p>📞 021-68908689 | 📱 15026608761（报关员小张）</p>
     <p>📍 上海市静安区沪太路841号 | ⏰ 周一至周五 9:00-18:00</p>
-    <p style="margin-top:12px;font-size:12px;">© 2025 EMS国际邮件商业报关. 沪ICP备xxxxxxxx号</p>
-    <p class="update-time">更新时间：2026-07-01</p>
+    <p style="margin-top:12px;font-size:12px;">© 2026 EMS国际邮件商业报关. </p>
+    <p class="update-time">更新时间：2026-07-02</p>
   </div>
 </footer>
 
