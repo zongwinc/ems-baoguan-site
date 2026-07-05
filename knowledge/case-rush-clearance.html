@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="preload" href="/favicon.svg" as="image" type="image/svg+xml" fetchpriority="low">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- ===== SEO Meta ===== -->
@@ -86,6 +87,7 @@
 }
 </script>
 
+<link rel="preload" href="../css/style.css" as="style" fetchpriority="high">
 <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -321,7 +323,7 @@
     <p class="update-time">更新时间：2026-06-29</p>
   </div>
 </footer>
-<script src="../js/main.js"></script>
+<script src="../js/main.js" defer></script>
 <script>
 document.querySelectorAll('.faq-question').forEach(q => {
   q.addEventListener('click', () => {
